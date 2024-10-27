@@ -1,8 +1,43 @@
 {% extends "base.html" %}
 
 {% block body %}
-    {% include "search_form.html" %}
-    <p><a href="/graph/network">See a realtime graph of the network</a></p>
-    <p><a href="/chat">See what people are saying</a></p>
-    <p><a href="/firehose">See <strong>everything</strong></a></p>
+<div style="margin-top: 20px; margin-right: 25px; margin-bottom: 30px; margin-left: auto;">
+<div style="margin-right: 25px; margin-left: 25px;">
+<pre>
+
+ ░▒▓███████▓▒░░▒▓██████▓▒░ ░▒▓██████▓▒░
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░
+ ░▒▓██████▓▒░░▒▓████████▓▒░▒▓█▓▒░
+       ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░
+       ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░
+
+
+░▒▓█▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+ ░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+ ░▒▓█▓▒▒▓█▓▒░░▒▓████████▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓██████▓▒░  ░▒▓██████▓▒░
+  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░
+  ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░
+   ░▒▓██▓▒░  ░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓████████▓▒░  ░▒▓█▓▒░
+
+
+░▒▓██████████████▓▒░░▒▓████████▓▒░░▒▓███████▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░  ░▒▓██████▓▒░░▒▓████████▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░
+░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░
+</pre>
+</div>
+<h2 style="margin-right: 25px; margin-left: 25px;">This <a href="https://github.com/armooo/meshview" target="_blank">Meshview</a> monitors <a href="https://meshtastic.org/" target="_blank">Meshtastic</a> MQTT root topic: <b>msh/US/CA/sacvalley</b></h2>    
+<p style="margin-right: 25px; margin-left: 25px;">We are a group of offgrid mesh nodes in the <a href="https://meshtastic.liamcottle.net/?lat=38.48103980946054&lng=238.80020141601562&zoom=10" target="_blank">Sacramento Valley of California</a>. Our main site is at: <a href="https://www.sacvalleymesh.com/" target=_blank">svme.sh</a></p>
+<p style="margin-right: 25px; margin-left: 25px;">Enter a node ID below, e.g. <b>!36d6ef61</b></p>
+{% include "search_form.html" %}
+    <p style="margin-right: 25px; margin-left: 25px;"><a href="/graph/network">See a realtime graph of the network</a></p>
+    <p style="margin-right: 25px; margin-left: 25px;"><a href="/chat">See what people are saying</a></p>
+    <p style="margin-right: 25px; margin-left: 25px;"><a href="/firehose">See <strong>everything</strong></a></p>
+</div>
 {% endblock %}
